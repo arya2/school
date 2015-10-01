@@ -1,0 +1,27 @@
+//Arya Solhi
+//L07
+//1416015
+//Lab 1
+//solhia
+//Question 5
+
+#include <stdio.h>
+
+int main(){
+    int count = 0;
+    
+    for (int s1=1; s1<201; s1++){
+        for (int s2=1; s2<201; s2++){
+            for (int h=0; h<201; h++){
+                if (s2 <= s1 && (h*h == (s1*s1 + s2*s2))){
+                    printf("\ns1: %d, s2: %d, hypotenuse: %d", s1,s2,h);
+                    count++;
+                }
+            }
+        }
+    }
+    
+    
+    printf("\n%d: ", count);
+    return 0;
+}

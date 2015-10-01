@@ -1,0 +1,19 @@
+//Arya Solhi
+//L07
+//1416015
+//Lab 1
+//solhia
+//Question 3
+#include <stdio.h>
+
+int main(){
+    int x;
+    do{
+        printf("enter int");
+        scanf("%d", &x);
+        if ((x<(-9) && x>(-100)) || (x<(100) && x>(9))){
+            printf("\nTwo integers: %d \n", x);
+        }
+    }while(x != 0);
+    return 0;
+}

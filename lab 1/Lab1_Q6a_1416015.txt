@@ -1,0 +1,29 @@
+//Arya Solhi
+//L07
+//1416015
+//Lab 1
+//solhia
+//Question 7a
+
+#include <stdio.h>
+
+int main(){
+    int tobeflipped;
+    int flipped=0;
+    int w = 1000000;
+    
+    printf("\nEnter a positive number: ");
+    
+    scanf("%d", &tobeflipped);
+    
+    for(int i = 0; i<7; i++){
+
+        flipped = flipped + w*(tobeflipped%10);
+        tobeflipped = tobeflipped/10;
+                w = w / 10;
+    }
+    
+    printf("%d", flipped);
+    
+    return 0;
+}

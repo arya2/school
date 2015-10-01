@@ -1,0 +1,29 @@
+//Arya Solhi
+//L07
+//1416015
+//Lab 1
+//solhia
+//Question 2
+
+#include <stdio.h>
+    
+int main (void){
+    int n, val;
+    int sum;
+    
+    do{
+        printf("input the value of n, which has to be positive");
+        scanf("%d", &n);
+    }while(n < 1);
+    
+    for (int i = 0; i<n; i++){
+        printf("enter int:");
+        scanf("%d", &val);
+        if (val < sum || i == 0){
+            sum = val;
+        }
+    }
+    
+    printf("%d", sum);
+    
+}
