@@ -36,3 +36,4 @@ int main(){
         i++;
     }while(i<100);
     printf("%d", sum);
+}

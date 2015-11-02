@@ -1,0 +1,50 @@
+//Arya Solhi
+//L07
+//1416015
+//Lab 2
+//solhia
+//Question 1
+
+#include <stdio.h>
+#include <math.h>
+
+void print_vector(double array[], int size){
+    printf("\nThe vector is: [");
+    for (int i = 0; i<size; i++){
+        printf("%f", array[i]);
+        if(!(i==(size-1))){
+            printf(", ");
+        }
+    }
+    printf("]\n");
+}
+
+void add_vectors(double vector1[], double vector2[], double vector3[], int n){
+    for(int i = 0; i<n; i++){
+        vector3[i] = vector2[i] + vector1[i];
+    }
+}
+
+double scalar_prod(double vector1[], double vector2[], int n){
+    double total = 0;
+    for(int i = 0; i<n; i++){
+        total += vector2[i] * vector1[i];
+    }
+    return total;
+}
+
+double norm2(double vector1[], int n){
+    return sqrt(scalar_prod(vector1, vector1, n));
+}
+
+int main(){
+    double x[] = {2,4,6};
+    double y[] = {0,1,2};
+    double t[3];
+    add_vectors(x, y, t, 3);
+    printf("The following is the added vectors");
+    print_vector(t, 3);
+    printf("The scalar product of this vector is: %f", scalar_prod(x, y, 3));
+    printf("The norm L2: %f", norm2(x, 3));
+}
+

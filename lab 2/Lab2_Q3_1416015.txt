@@ -1,0 +1,24 @@
+//Arya Solhi
+//L07
+//1416015
+//Lab 2
+//solhia
+//Question 3
+
+#include <stdio.h>
+#include <math.h>
+
+void string_copy(const char source[], char destination[], int n){
+    int i = 0;
+    while (source[i] != '\0' && i < n){
+        destination[i] = source[i];
+        i+=1;
+    }
+    
+}
+
+int main(){
+    char t[3];
+    string_copy("lol", t, 3);
+    printf("%s", t);
+}
